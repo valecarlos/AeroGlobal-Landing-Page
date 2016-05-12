@@ -16,4 +16,14 @@ $( document ).ready(function() {
         });
         return false;
     });
+
+    //set opacity to siblings
+    /*
+    $('.card').hover(function(){
+        console.log("im here");
+        $(this).siblings('.card').css('transform','scale(0.9)');}
+        , function (){
+        $(this).siblings('.card').css('transform','scale(1)');
+    });
+*/
 });
