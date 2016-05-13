@@ -55,6 +55,9 @@ section.sec-contact{
 	right: 0px;
 	top: 40%;
 	padding-right: 15px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-overflow-scrolling: touch
 }
 
 .left-menu ul{
