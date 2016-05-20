@@ -3,11 +3,11 @@ body{
 }
 
 .header{
-	height: 70px;
+	height: 80px;
 	background-color: white;
 	box-shadow: 5px 2px 5px #888888;
 	text-align: center;
-	padding: 15px;
+	padding: 10px 10%;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -15,38 +15,59 @@ body{
 	z-index: 10;
 }
 
+.header img{
+	height: 60px;
+}
+
 h3{
 	border-bottom: 2px solid #B0C4DE;
+	font-weight: bold;
+	font-size: 30px;
 }
 
 .container{
 	margin-top: 80px;
+	font-family: 'Josefin Slab', serif;
 }
 
 .grid {
   background: #EEE;
   margin: 15px auto;
-  z-index: -10;
+  /*z-index: -10;*/
 }
 
 .grid-item {
   width: 160px;
   height: 120px;
   float: left;
+  padding: 1px;
+  overflow: hidden;
+  /*
   background: rgb(100,149,237);
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-  overflow: hidden;
+  border-radius: 5px;*/
+  
+}
+
+.grid-item:first-child {
+	background: rgb(76, 159, 191);
+	color: white;
 }
 
 .grid-item p{
 	padding: 10px;
+	font-size: 16px;
 }
 
 .grid-item img {
   display: block;
   max-width: 100%;
+  transition: all 1s ease-out;
+}
+
+.grid-item img:hover{
+	transform: scale(1.1);
 }
 
 .grid-item--width2 { width: 320px; }
